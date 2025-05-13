@@ -15,7 +15,7 @@ resource "aws_launch_template" "web_server_as" {
   resource "aws_elb" "web_server_lb"{
      name = "web-server-lb"
      security_groups = [aws_security_group.web_server.id]
-     subnets = ["subnet-024286466e258f339", "subnet-09558309acf4661a8"]
+     subnets = ["subnet-0763db35f171ddbf7", "subnet-0a2543b957ec2bf1f"]
      listener {
       instance_port     = 8000
       instance_protocol = "http"
